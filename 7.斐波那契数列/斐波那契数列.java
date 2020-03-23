@@ -1,0 +1,13 @@
+public class Solution {
+    public int Fibonacci(int n) {
+        if(n == 0){
+            return 0;
+        }
+        int a = 1;
+        int b = 1;
+        if(n==1||n==2){
+            return 1;
+        }
+        return Fibonacci(n-1)+Fibonacci(n-2);
+    }
+}
